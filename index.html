@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+   <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+   <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+ </head>
+ <body>
+   <script>
+    change = function(url){
+      $('#TheFrame').attr("src",url);
+    };
+   </script>
+
+  <h1>Lab: Cartogram</h1>
+  <h2><u>B05208009</u> | <b>叉燒包</b></h2>
+  <br>
+  <hr>
+  <br>
+  <h2>2016年台灣人口指標Cartogram</h2>
+  <form>
+    請選擇指標種類
+    <select id="choice" onchange=change(this.value)>
+      <option>
+      <option value="./pop/index.html">人口數
+      <option value="age/index.html">老化指數
+      <option value="foreign/index.html">外籍配偶
+      <option value="sex/index.html">性別比
+    </select>
+  </form>
+
+  <br>
+  <hr>
+  <br>
+
+
+  <iframe width="80%" height="840" frameborder="0" id="TheFrame" src=""></iframe>
+
+
+ </body>
+
+</html>
